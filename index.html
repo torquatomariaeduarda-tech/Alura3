@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog</title>
+<style>
+header {
+
+
+background-color: #183C63;
+color: #FFFFFF;
+text-align: center;
+max-width: 800px;
+margin: 0 auto;
+padding: 16px;
+}
+img {
+width: 80px;
+height: 80px;
+}
+main {
+   flex:1;
+}
+.cabecalho {
+ background-color: #7e3e1c;
+ padding: 15px 25px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.cabecalho-link {
+ color: #fff;
+ text-decoration: none;
+}
+body {
+ display: flex;
+ flex-direction: column;
+ min-height: 100vh;
+}
+h1 {
+ color: #fff;
+ font-size: 24px;
+}
+body {
+ display: flex;
+ flex-direction: column;
+ min-height: 100vh;
+ background-color: #f5f2f2;
+}
+footer {
+ background-color: #7e3e1c;
+ padding: 15px 25px;
+ color: #fff;
+}
+.cartao-interno {
+ position: relative;
+}
+.cartao-frente,
+.cartao-verso {
+ position: absolute;
+ border-radius: 12px;
+ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.cartao-interno {
+ position: relative;
+ transition: transform 0.8s;
+ transform-style: preserve-3d;
+}
+.cartao-frente,
+.cartao-verso {
+ position: absolute;
+ border-radius: 12px;
+ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+ backface-visibility: hidden;
+}
+.cartao:hover .cartao-interno {
+ transform: rotateY(180deg);
+}
+section {
+ display: flex;
+ gap: 16px;
+}
+
+
+</style>
+</head>
+<body>
+<header>
+<h1>Meu blog tech</h1>
+<p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
+</header>
+<main>
+
+
+<div>
+<h2>Meu primeiro post</h2>
+<p>Por: Marcelo Paludetto</p>
+<p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de tecnologia.</p>
+
+
+<p class="artigo-autor">Por: Marcelo Paludetto </p></div>
+<img src="imagem.jpeg" alt="logotipo conceitual de tecnologia e educação: um livro aberto de onde emerge um cérebro digital brilhante, cercado por ícones de Wi-Fi, circuitos e lâmpada de ideia. Cores em tons de azul e branco.">
+<section class="cartoes">
+ <article class="cartao">...</article>
+ <article class="cartao">...</article>
+</section>
+</main>
+</body>
+</html>
+
